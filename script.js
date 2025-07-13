@@ -436,7 +436,7 @@ const newsApiKey = "745377296d014e39a7090554c6e68fd0";
 
 
 async function fetchWeatherNews() {
-  const url =const url = `${proxy}https://newsapi.org/v2/everything?q=weather&apiKey=${newsApiKey}`;
+  const url = `${proxy}https://newsapi.org/v2/everything?q=weather&apiKey=${newsApiKey}`;
 
   try {
     const res = await fetch(url);
