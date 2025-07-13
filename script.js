@@ -428,13 +428,15 @@ function clearWeatherData() {
 }
 
 
+const proxy = "https://cors-anywhere.herokuapp.com/";
+
 
 
 const newsApiKey = "745377296d014e39a7090554c6e68fd0"; 
 
 
 async function fetchWeatherNews() {
-  const url = `https://newsapi.org/v2/everything?q=weather%20OR%20climate%20OR%20storm&sortBy=publishedAt&language=en&pageSize=5&apiKey=${newsApiKey}`;
+  const url =const url = `${proxy}https://newsapi.org/v2/everything?q=weather&apiKey=${newsApiKey}`;
 
   try {
     const res = await fetch(url);
